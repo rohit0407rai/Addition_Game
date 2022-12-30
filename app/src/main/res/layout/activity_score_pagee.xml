@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Score_Pagee">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFDED4">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#DFDED4"
+            android:text="Current Score : 00"
+            android:textSize="25sp"
+            android:textColor="#432F21"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#DFDED4"
+            android:text="Just Maths"
+            android:layout_above="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:textColor="#432F21"
+            android:id="@+id/textView2"
+            android:padding="5dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedbtn"
+            android:padding="5dp"
+            android:src="@drawable/share"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/Share"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

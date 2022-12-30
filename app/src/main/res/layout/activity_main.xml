@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFDED4"
+        android:paddingBottom="100dp"
+        android:paddingTop="100dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just Maths"
+            android:id="@+id/textView"
+            android:textSize="50sp"
+            android:textColor="#432F21"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageButton
+                android:id="@+id/btnMathShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbtn"
+                app:tint="@color/white"
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/share"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <ImageButton
+                android:id="@+id/btnMathPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbtn"
+                app:tint="@color/white"
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/play"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <ImageButton
+                android:id="@+id/btnMathRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbtn"
+                app:tint="@color/white"
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/star"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
